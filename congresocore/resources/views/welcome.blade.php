@@ -22,7 +22,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-uady">
         <a class="navbar-brand" href="{{ url('/') }}">
-            <img height="60" src="{{ asset('images/brand/logo-white.svg') }}" alt="">
+            <img class="imagen-logo" height="60" src="{{ asset('images/brand/logo-white.svg') }}" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -142,14 +142,12 @@
         <div class="container h-100">
             <div class="row align-items-center h-100">
                 <div class="container rounded">
-                    <h1 class="text-center">Colaboradores</h1>
+                    <h3 class="text-center">Colaboradores</h3>
                     <div class="slider">
                         <div class="logos">
                             <img src="{{ asset('images/welcome/schools/school01.png') }}" alt="">
                             <img src="{{ asset('images/welcome/schools/school02.png') }}" alt="">
                             <img src="{{ asset('images/welcome/schools/school03.png') }}" alt="">
-                        </div>
-                        <div class="logos">
                             <img src="{{ asset('images/welcome/schools/school04.png') }}" alt="">
                             <img src="{{ asset('images/welcome/schools/school01.png') }}" alt="">
                             <img src="{{ asset('images/welcome/schools/school02.png') }}" alt="">
@@ -193,7 +191,7 @@
     <footer class="footer-14398">
 
         <div class="container">
-            <div class="row mb-5">
+            <div class="row mb-5 text-center">
                 <div class="col-md-4">
                     <a href="#" class="footer-site-logo">
                         <img height="75" src="{{ asset('images/brand/logo-white2.svg') }}" alt="">

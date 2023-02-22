@@ -461,6 +461,13 @@ body {
 /* / Móviles en vertical
    ------------------------------------------------------------------------- */
 @media (min-width: 300px) and (max-width: 480px) {
+
+    /* imagen logo */
+    .imagen-logo {
+        height: 50px;
+    }
+    /* imagen logo */
+
     .slider-title {
         font-size: 3rem;
     }
@@ -471,12 +478,12 @@ body {
     }
     
     .nosotros_texto p {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         font-weight: 500;
     }
     
     .nosotros-congreso {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         font-weight: bold;
     }
     
@@ -495,4 +502,17 @@ body {
         opacity: 0.5;
     }
     /* convocatoria  */
+
+    /* colaboradores */
+    .logos img {
+        height: 65px;
+        padding: 0 20px;
+    }
+    /* colaboradores */
+
+    /* footer  */
+    .footer-site-logo img {
+        height: 60px;
+    }
+    /* footer  */
 }
