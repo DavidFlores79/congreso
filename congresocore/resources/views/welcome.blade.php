@@ -9,10 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700;900&family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css" />
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
-    <link rel="icon" type="image/png" href="{{ asset('images/brand/favicon.png') }}"/>
+    <link rel="icon" type="image/png" href="{{ asset('images/brand/favicon.png') }}" />
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
@@ -20,8 +21,8 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-uady">
-        <a class="navbar-brand" href="#">
-            <img height="40" src="{{ asset('images/brand/logo-white.svg') }}" alt="">
+        <a class="navbar-brand" href="{{ url('/') }}">
+            <img height="60" src="{{ asset('images/brand/logo-white.svg') }}" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -29,14 +30,20 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item active mx-4">
-                    <a class="nav-link" href="#">Programa <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item mx-4">
-                    <a class="nav-link" href="#">Carteles</a>
+                    <a class="nav-link" href="" data-toggle="modal" data-target="#convocatoriaModal">Convocatoria</a>
                 </li>
                 <li class="nav-item mx-4">
+                    <a class="nav-link" href="">Inscripción</a>
+                </li>
+                <li class="nav-item mx-4">
+                    <a class="nav-link" href="">Colaboradores</a>
+                </li>
+                <!-- <li class="nav-item mx-4">
                     <a class="nav-link" href="#">EN VIVO</a>
-                </li>
+                </li> -->
             </ul>
         </div>
     </nav>
@@ -63,36 +70,23 @@
 
     <!-- Acerca de Nosotros -->
     <section id="about" class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-ms-12 col-sm-12 col-xs-12 text-center">
-                    <div class="section-header">
-                        <h2>Acerca de Nosotros</h2>
-                        <p></p>
-                    </div>
-                </div>
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="nosotros_texto">
+                <h3>La Facultad de Enfermería de la Universidad Autónoma de Yucatán</h3>
+                <p>Convoca a profesionales de la salud, investigadores, docentes, egresados y estudiantes con interés en la promoción de la salud a participar en el:</p>
+                <span class="nosotros-congreso">II Congreso Internacional Virtual de Promoción de la Salud</span>
+                <p>"Aprendizajes multidiciplinarios y retos actuales para la equidad en salud"</p>
             </div>
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                    <div class="about-img">
-                        <img src="{{ asset('images/welcome/about-us.jpg') }}" alt="Acerca de Nosotros">
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                    <div class="item-text">
-                        <h4>¿Quiénes somos?</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste magni, voluptas quae consequatur eum labore voluptatum sed, ullam perspiciatis incidunt, vel eius repellendus nobis. Aliquid quo magni delectus esse porro!</p>
-                        <h4>Nuestra Misión</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis sit dignissimos quidem consequatur ea, nostrum aliquam blanditiis labore, animi ipsum fugiat totam, ducimus voluptates dolore. Culpa sapiente voluptate rerum repellendus.
-                            Porro itaque saepe qui totam ad, expedita debitis consequuntur. Suscipit nihil repellendus illo saepe sapiente nam laboriosam itaque asperiores quod! Inventore repellendus cupiditate placeat minima, commodi error illum ducimus at!</p>
-                    </div>
+            <div class="nosotros-imagen">
+                <div class="about-img">
+                    <img src="{{ asset('images/welcome/about-us.jpg') }}" alt="Acerca de Nosotros">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Carteles  -->
-    <section id="carteles">
+    <!-- <section id="carteles">
         <div class="row">
             <div class="col-ms-12 col-sm-12 col-xs-12 text-center">
                 <div class="section-header">
@@ -113,13 +107,6 @@
 
                         <div class="autores text-muted">Autores:</div>
                         <p>Anaid Guadalupe Martín Díaz (Alberto González Jiménez, Ángel Patricio Hernández Nieves, Sarai Ramirez Colina)</p>
-                        <!-- <div class="user">
-                            <img src="https://yt3.ggpht.com/a/AGF-l7-0J1G0Ue0mcZMw-99kMeVuBmRxiPjyvIYONg=s900-c-k-c0xffffffff-no-rj-mo" alt="user" />
-                            <div class="user-info">
-                                <h5>July Dec</h5>
-                                <small>2h ago</small>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
                 <div class="card">
@@ -131,13 +118,6 @@
                         <h4 class="m-2">PROGRAMA: MEJORAR EL ESTADO DE NUTRICIÓN DE POBLACIÓN VULNERABLE DE OAXACA, A PARTIR DE LA IMPLEMENTACIÓN DE DIFERENTES ACCIONES.</h4>
                         <div class="autores text-muted">Autores:</div>
                         <p>María del Refugio Carrasco Quintero (Trinidad Cortés Pérez, José Antonio Roldan Amaro)</p>
-                        <!-- <div class="user">
-                            <img src="https://lh3.googleusercontent.com/ogw/ADGmqu8sn9zF15pW59JIYiLgx3PQ3EyZLFp5Zqao906l=s32-c-mo" alt="user" />
-                            <div class="user-info">
-                                <h5>Eyup Ucmaz</h5>
-                                <small>Yesterday</small>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
                 <div class="card">
@@ -149,19 +129,12 @@
                         <h4 class="m-2">ACCIONES DE EDUCACIÓN PARA LA SALUD DIRIGIDAS A PUÉRPERAS EN LA ATENCIÓN PRIMARIA DE SALUD EN PERIODO DE PANDEMIA</h4>
                         <div class="autores text-muted">Autores:</div>
                         <p>Camila Patricia Lisboa Rauber</p>
-                        <!-- <div class="user">
-                            <img src="https://studyinbaltics.ee/wp-content/uploads/2020/03/3799Ffxy.jpg" alt="user" />
-                            <div class="user-info">
-                                <h5>Carrie Brewer</h5>
-                                <small>1w ago</small>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
             </div>
         </div>
 
-    </section>
+    </section> -->
 
 
     <!-- universidades  -->
@@ -191,6 +164,34 @@
 
         </div>
     </section>
+
+    <!-- Modal Convocatoria -->
+
+    <div class="modal fade" id="convocatoriaModal" tabindex="-1" aria-labelledby="convocatoriaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-body convocatoria">
+                    <h4>PRESENTACIÓN DE PROTOCOLOS Y TRABAJOS DE INVESTIGACIÓN FINALIZADOS EN MODALIDAD CARTEL Y PRESENTACIONES ORALES BASES</h4>
+                    <p>1. Se recibirán resúmenes de protocolos de investigación e investigaciones finalizadas que aborden temas relacionados con las Líneas de Acción de la Promoción de la Salud:</p>
+                    <ol type="a">
+                        <li>Fortalecer los entornos saludables claves</li>
+                        <li>Facilitar la participación y el empoderamiento de la comunidad y el compromiso de la sociedad civil.</li>
+                        <li>Fortalecer la buena gobernanza y el trabajo intersectorial para mejorar la salud y el bienestar y abordar los determinantes sociales de la salud</li>
+                        <li>Fortalecer los sistemas y servicios de salud a través de la promoción de la salud</li>
+                    </ol>
+                    <p>2. Los resúmenes se recibirán a partir del 20 de febrero hasta el 21 de abril de 2023 hasta las 23:59 hrs.</p>
+                    <p>3. El resumen tendrá un máximo de 300 palabras (sin contar las referencias). El título debe estar al inicio, centrado y con negrita. Seguido con el nombre y apellido de los autores (máximo 5). Cada autor deberá ser identificado con número en superíndice, grado académico e institución de afiliación. Sólo podrá ser autor principal de un resumen enviado.</p>
+                    <p>4. Los apartados de los trabajos deberán contar en el caso de protocolos de investigación: Introducción, objetivo, materiales y métodos e impacto esperado. Para investigaciones finalizadas: Introducción, objetivo, materiales y métodos, resultados y conclusiones. En ambos tipos de trabajo incluir un máximo de tres referencias actuales (últimos 5 años) en formato APA 7ma edición. Formato para resumen, disponible en: <a href="https://bit.ly/3XEK7kj">https://bit.ly/3XEK7kj</a></p>
+                    <p>5. Los resúmenes deben ser enviados al correo congreso_promocionsalud@correo.uady.mx (Guardar archivo con apellidos del primer autor y línea de acción del tema, ejemplo: MoralesLopez_fortalecerlosentornossaludablesclaves.docx).</p>
+                    <p>6. El Comité Científico evaluará la pertinencia de los trabajos enviados. Del 25 al 31 de mayo de 2023 se emitirán los dictámenes de aceptación o no aceptación por medio del correo electrónico. Las instrucciones para el cartel o la presentación oral se darán a conocer en los dictámenes. Los responsables de los resúmenes deben contar con inscripción y registro al congreso a más tardar el 23 de junio de 2023.</p>
+                    <p>7. Se otorgarán reconocimientos a los trabajos que por su trascendencia, relevancia y rigor metodológico que destaquen en modalidad cartel y presentación oral.</p>
+                    <p>8. Los casos no previstos en la presente convocatoria serán resueltos por el Comité Organizador al correo: <a href="mailto:congreso_promocionsalud@correo.uady.mx">congreso_promocionsalud@correo.uady.mx</a></p>
+                    <img class="convocatoria-background" src="{{ asset('images/brand/jaguar.svg') }}" alt="Mascota UADY">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Convocatoria -->
 
     <!-- footer  -->
     <footer class="footer-14398">

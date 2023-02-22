@@ -1,3 +1,22 @@
+/* 
+    Created on : 21/02/2023, 20:50:12 PM
+    Author     : David Flores
+*/
+:root {
+    --primary: #0C132D !important;
+    --white: #FFFFFF !important;
+    /* --primary-trans: rgba(30,105,166,.6) !important;
+    --blue: #0c4c91 !important;
+    --red: #ef6461;
+    --dark: #212529;
+    --fondo-card: #ecf5fd;
+    --main-bg-color: #1e69a6;
+    --main-bg-color-light: #528bb9;
+    --second-bg-color: #2379bf;
+    --second-bg-color-light: #3391dd;
+    --third-bg-color: #474444; */
+}
+
 * {
     box-sizing: border-box;
 }
@@ -7,7 +26,7 @@ body {
 }
 
 .bg-uady {
-    background-color: #79785d;
+    background-color: var(--primary);
 }
 
 .navbar-nav .nav-item a {
@@ -53,12 +72,29 @@ body {
 /*about-us*/
 
 .section-padding {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
-.section-padding {
-    padding: 100px 0;
+.nosotros_texto h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
 }
+
+.nosotros_texto p {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.nosotros-congreso {
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.nosotros_texto {
+    padding-left: 1.5rem;
+    color: var(--primary);
+}
+
 
 .section-header {
     padding-bottom: 30px;
@@ -72,7 +108,7 @@ body {
     padding-top: 1rem;
 }
 .about-img img {
-    width: 100%;
+    width: 50vw;
 }
 /*about-us*/
 
@@ -168,6 +204,40 @@ body {
 }
 
 /* carteles*/
+
+/* Convocatoria  */
+.modal-dialog .modal-content {
+    /* background-color: var(--primary); */
+    background: rgb(2,0,36);
+    background: linear-gradient(138deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 88%);
+}
+
+.convocatoria {
+    padding: 3rem 2rem;
+}
+
+.convocatoria h4 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+    color: var(--white);
+}
+
+.convocatoria p, .convocatoria ol, .convocatoria li {
+    color: var(--white);
+    font-family: 'Nunito', sans-serif;
+}
+
+.convocatoria-background {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    bottom: -270px;
+    opacity: 0.5;
+}
+
+/* Convocatoria  */
 
 /* universidades  */
 .universidades .container {
@@ -269,6 +339,40 @@ body {
 /* / Tablets en horizonal y escritorios normales */
 /* ------------------------------------------------------------------------- / */
 @media (min-width: 768px) and (max-width: 1199px) {
+
+    .nosotros_texto h3 {
+        font-size: 2.8rem;
+        font-weight: 700;
+    }
+    
+    .nosotros_texto p {
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+    
+    .nosotros-congreso {
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    
+    .nosotros_texto {
+        padding-left: 1.5rem;
+    }
+
+    /* convocatoria  */
+    .convocatoria h4 {
+        font-size: 1.4rem;
+    }
+
+    .convocatoria-background {
+        width: 60%;
+        position: absolute;
+        right: 0;
+        bottom: -550px;
+        opacity: 0.5;
+    }
+    /* convocatoria  */
+
 }
 
 /* / Móviles en horizontal o tablets en vertical
@@ -277,12 +381,109 @@ body {
     .slider-title {
         font-size: 5rem;
     }
+
+    .nosotros_texto h3 {
+        font-size: 2.3rem;
+        font-weight: 700;
+    }
+    
+    .nosotros_texto p {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    
+    .nosotros-congreso {
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    
+    .nosotros_texto {
+        padding-left: 1rem;
+        color: var(--primary);
+    }
+
+    /* convocatoria  */
+    .convocatoria h4 {
+        font-size: 1.2rem;
+    }
+
+    .convocatoria-background {
+        width: 60%;
+        position: absolute;
+        right: 0;
+        bottom: -750px;
+        opacity: 0.5;
+    }
+    /* convocatoria  */
 }
+
+@media (max-width: 994px) {
+
+    /* convocatoria  */
+    .convocatoria h4 {
+        font-size: 1.2rem;
+    }
+
+    .convocatoria-background {
+        width: 75%;
+        position: absolute;
+        right: 0;
+        bottom: -950px;
+        opacity: 0.5;
+    }
+    /* convocatoria  */
+
+}
+
+@media (min-width: 481px) and (max-width: 509px) {
+    /* convocatoria  */
+
+    .convocatoria-background {
+        width: 60%;
+        position: absolute;
+        right: 0;
+        bottom: -1050px;
+        opacity: 0.5;
+    }
+    /* convocatoria  */
+}
+
 
 /* / Móviles en vertical
    ------------------------------------------------------------------------- */
-@media (max-width: 480px) {
+@media (min-width: 300px) and (max-width: 480px) {
     .slider-title {
         font-size: 3rem;
     }
+
+    .nosotros_texto h3 {
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+    
+    .nosotros_texto p {
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+    
+    .nosotros-congreso {
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+    
+    .nosotros_texto {
+        padding-left: .5rem;
+        color: var(--primary);
+    }
+
+    /* convocatoria  */
+
+    .convocatoria-background {
+        width: 70%;
+        position: absolute;
+        right: 0;
+        bottom: -1250px;
+        opacity: 0.5;
+    }
+    /* convocatoria  */
 }
