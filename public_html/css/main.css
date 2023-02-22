@@ -237,6 +237,19 @@ body {
     opacity: 0.5;
 }
 
+.convocatoria .close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: var(--white);
+}
+
+.convocatoria-correo {
+    color: white;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
 /* Convocatoria  */
 
 /* universidades  */
@@ -494,11 +507,19 @@ body {
 
     /* convocatoria  */
 
+    .convocatoria h4 {
+        font-size: 1rem;
+    }
+
+    .convocatoria p, .convocatoria ol, .convocatoria li {
+        font-size: 0.9rem;
+    }
+
     .convocatoria-background {
         width: 70%;
         position: absolute;
         right: 0;
-        bottom: -1500px;
+        bottom: -1200px;
         opacity: 0.5;
     }
     /* convocatoria  */

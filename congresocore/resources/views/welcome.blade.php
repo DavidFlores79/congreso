@@ -165,6 +165,9 @@
         <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
             <div class="modal-content">
                 <div class="modal-body convocatoria">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                     <h4>PRESENTACIÓN DE PROTOCOLOS Y TRABAJOS DE INVESTIGACIÓN FINALIZADOS EN MODALIDAD CARTEL Y PRESENTACIONES ORALES BASES</h4>
                     <p>1. Se recibirán resúmenes de protocolos de investigación e investigaciones finalizadas que aborden temas relacionados con las Líneas de Acción de la Promoción de la Salud:</p>
                     <ol type="a">
@@ -179,7 +182,7 @@
                     <p>5. Los resúmenes deben ser enviados al correo congreso_promocionsalud@correo.uady.mx (Guardar archivo con apellidos del primer autor y línea de acción del tema, ejemplo: MoralesLopez_fortalecerlosentornossaludablesclaves.docx).</p>
                     <p>6. El Comité Científico evaluará la pertinencia de los trabajos enviados. Del 25 al 31 de mayo de 2023 se emitirán los dictámenes de aceptación o no aceptación por medio del correo electrónico. Las instrucciones para el cartel o la presentación oral se darán a conocer en los dictámenes. Los responsables de los resúmenes deben contar con inscripción y registro al congreso a más tardar el 23 de junio de 2023.</p>
                     <p>7. Se otorgarán reconocimientos a los trabajos que por su trascendencia, relevancia y rigor metodológico que destaquen en modalidad cartel y presentación oral.</p>
-                    <p>8. Los casos no previstos en la presente convocatoria serán resueltos por el Comité Organizador al correo: <a href="mailto:congreso_promocionsalud@correo.uady.mx">congreso_promocionsalud@correo.uady.mx</a></p>
+                    <p>8. Los casos no previstos en la presente convocatoria serán resueltos por el Comité Organizador al correo: <a class="convocatoria-correo" href="mailto:congreso_promocionsalud@correo.uady.mx">congreso_promocionsalud@correo.uady.mx</a></p>
                     <img class="convocatoria-background" src="{{ asset('images/brand/jaguar.svg') }}" alt="Mascota UADY">
                 </div>
             </div>
