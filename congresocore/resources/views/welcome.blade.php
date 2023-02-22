@@ -198,70 +198,29 @@
 
         <div class="container">
             <div class="row mb-5">
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <a href="#" class="footer-site-logo">
-                        <img height="40" src="{{ asset('images/brand/logo-white.svg') }}" alt="">
+                        <img height="75" src="{{ asset('images/brand/logo-white2.svg') }}" alt="">
                     </a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit officiis corporis optio natus. </p>
+                    <p>"Aprendizajes multidiciplinarios y retos actuales para la equidad en salud" </p>
                 </div>
-                <div class="col-md-2 ml-auto">
+                <div class="col-md-4 text-center">
                     <h3>Contáctanos</h3>
                     <ul class="list-unstyled links">
-                        <li><a href="#">Sell online</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Examples</a></li>
-                        <li><a href="#">Website editors</a></li>
-                        <li><a href="#">Online retail</a></li>
+                        <li><a href="">Facultad de Enfermería</a></li>
+                        <li><a href="">Calle 90 SN Centro</a></li>
+                        <li><a href="tel:9999242216">Tel. (9999) 24-22-16</a></li>
                     </ul>
                 </div>
-                <div class="col-md-2 ml-auto">
-                    <h3>Redes Sociales</h3>
-                    <ul class="list-unstyled links">
-                        <li><a href="#">Events</a></li>
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">Awards</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><a href="#">Online retail</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2 ml-auto">
+                <div class="col-md-4 text-center">
                     <h3>Acerca de Nosotros</h3>
                     <ul class="list-unstyled links">
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Career</a></li>
-                        <li><a href="#">Contacts</a></li>
+                        <li><a href="">Contáctanos</a></li>
+                        <li><a href="mailto:congreso_promocionsalud@correo.uady.mx">congreso_promocionsalud@correo.uady.mx</a></li>
                     </ul>
                 </div>
             </div>
 
-            <div class="row mb-4">
-                <div class="col-12 pb-4">
-                    <div class="line"></div>
-                </div>
-                <div class="col-md-6 text-md-left">
-                    <ul class="list-unstyled link-menu nav-left">
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms &amp; Conditions</a></li>
-                        <li><a href="#">Code of Conduct</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-6 text-md-right">
-                    <ul class="list-unstyled social nav-right">
-                        <li><a href="#"><span class="icon-twitter"></span></a></li>
-                        <li><a href="#"><span class="icon-instagram"></span></a></li>
-                        <li><a href="#"><span class="icon-facebook"></span></a></li>
-                        <li><a href="#"><span class="icon-pinterest"></span></a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-7">
-                    <p><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, fuga. Ex at maxime eum odio quibusdam pariatur expedita explicabo harum! Consectetur ducimus delectus nemo, totam odit!</small></p>
-                </div>
-            </div>
         </div>
 
         </div>

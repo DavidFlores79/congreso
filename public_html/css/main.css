@@ -282,8 +282,8 @@ body {
 /* footer  */
 .footer-14398 {
     padding: 7rem 0;
-    background: #79785d;
-    color: #777;
+    background: var(--primary);
+    color: var(--white);
   }
   .footer-14398 .footer-site-logo {
     color: #fff;
