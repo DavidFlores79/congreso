@@ -17,6 +17,12 @@
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Animate  -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="{{ asset('js/animatescroll.js') }}"></script>
+
 </head>
 
 <body>
@@ -24,52 +30,74 @@
         <a class="navbar-brand" href="{{ url('/') }}">
             <img class="imagen-logo" height="60" src="{{ asset('images/brand/logo-white.svg') }}" alt="">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button id="navbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item active mx-4">
-                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                    <a class="nav-link">Inicio <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item mx-4">
-                    <a class="nav-link" href="" data-toggle="modal" data-target="#convocatoriaModal">Convocatoria</a>
+                <li class="nav-item active mx-4">
+                    <a class="nav-link" data-toggle="modal" data-target="#convocatoriaModal">Convocatoria</a>
                 </li>
-                <li class="nav-item mx-4">
-                    <a class="nav-link" href="">Inscripción</a>
+                <li class="nav-item active mx-4">
+                    <a id="menuInscripcion" class="nav-link">Inscripción</a>
                 </li>
-                <li class="nav-item mx-4">
-                    <a class="nav-link" href="">Colaboradores</a>
+                <li class="nav-item active mx-4">
+                    <a id="menuColaboradores" class="nav-link">Colaboradores</a>
                 </li>
                 <!-- <li class="nav-item mx-4">
                     <a class="nav-link" href="#">EN VIVO</a>
                 </li> -->
             </ul>
         </div>
+
+        <!-- Modal -->
+        <div class="menuModal modal fade" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content text-center p-3 text-secondary">
+                    <div class="modal-body">
+                        <!--Menu-->
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active">Inicio <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="modal" data-target="#convocatoriaModal">Convocatoria</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" id="menuInscripcionMovil">Inscripción</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" id="menuColaboradoresMovil" >Colaboradores</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </nav>
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img src="{{ asset('images/welcome/image01.jpg') }}" alt="">
+                <!-- <img id="image01" src="" alt=""> -->
+                <img src="{{ asset('images/welcome/image04.jpg') }}" alt="">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/welcome/image02.jpg') }}" alt="">
+                <img src="{{ asset('images/welcome/image05.jpg') }}" alt="">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/welcome/image03.jpg') }}" alt="">
+                <img src="{{ asset('images/welcome/image06.jpg') }}" alt="">
             </div>
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
     </div>
-    <section class="swiper-slider">
-        <!-- Swiper -->
-
-
-    </section>
 
     <!-- Acerca de Nosotros -->
-    <section id="about" class="section-padding">
+    <section id="about-us" class="section-padding">
         <div class="d-flex align-items-center justify-content-between">
             <div class="nosotros_texto">
                 <h3>La Facultad de Enfermería de la Universidad Autónoma de Yucatán</h3>
@@ -138,7 +166,7 @@
 
 
     <!-- universidades  -->
-    <section class="universidades">
+    <section id="colaboradores" class="universidades">
         <div class="container h-100">
             <div class="row align-items-center h-100">
                 <div class="container rounded">
@@ -190,6 +218,23 @@
     </div>
     <!-- Modal Convocatoria -->
 
+    <!-- Modal Inscripcion -->
+     <!-- Modal -->
+     <div class="inscripcionModal modal fade" id="inscripcionModal" tabindex="-1" aria-labelledby="inscripcionModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                <div class="modal-content text-center">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <img src="{{ asset('images/welcome/inscripcion.png') }}" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    <!-- Modal Inscripcion -->
+
     <!-- footer  -->
     <footer class="footer-14398">
 
@@ -223,23 +268,9 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            allowTouchMove: true,
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
-            loop: true,
-        });
-    </script>
+    <script src="{{ asset('js/main.js') }}"></script>
 </body>
 
 </html>
