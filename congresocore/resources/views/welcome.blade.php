@@ -142,7 +142,7 @@
         <div class="container h-100">
             <div class="row align-items-center h-100">
                 <div class="container rounded">
-                    <h1 class="text-center">Universidades Participantes:</h1>
+                    <h1 class="text-center">Colaboradores</h1>
                     <div class="slider">
                         <div class="logos">
                             <img src="{{ asset('images/welcome/schools/school01.png') }}" alt="">
