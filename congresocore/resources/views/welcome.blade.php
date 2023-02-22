@@ -145,18 +145,14 @@
                     <h1 class="text-center">Universidades Participantes:</h1>
                     <div class="slider">
                         <div class="logos">
-                            <i class="fab fa-js fa-4x"></i>
-                            <i class="fab fa-linkedin-in fa-4x"></i>
-                            <i class="fab fa-dribbble fa-4x"></i>
-                            <i class="fab fa-medium-m fa-4x"></i>
-                            <i class="fab fa-github fa-4x"></i>
+                            <img src="{{ asset('images/welcome/schools/school01.png') }}" alt="">
+                            <img src="{{ asset('images/welcome/schools/school02.png') }}" alt="">
+                            <img src="{{ asset('images/welcome/schools/school03.png') }}" alt="">
                         </div>
                         <div class="logos">
-                            <i class="fab fa-js fa-4x"></i>
-                            <i class="fab fa-linkedin-in fa-4x"></i>
-                            <i class="fab fa-dribbble fa-4x"></i>
-                            <i class="fab fa-medium-m fa-4x"></i>
-                            <i class="fab fa-github fa-4x"></i>
+                            <img src="{{ asset('images/welcome/schools/school04.png') }}" alt="">
+                            <img src="{{ asset('images/welcome/schools/school01.png') }}" alt="">
+                            <img src="{{ asset('images/welcome/schools/school02.png') }}" alt="">
                         </div>
                     </div>
                 </div>

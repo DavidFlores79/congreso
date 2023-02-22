@@ -260,6 +260,15 @@ body {
     animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
 }
 
+.logos img {
+    height: 150px;
+    padding: 0 50px;
+}
+
+.logos .separador {
+    width: 50px !important;
+}
+
 @keyframes slidein {
     from {
         transform: translate3d(0, 0, 0);
