@@ -6,6 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ config('app.name', 'Congreso 2023') }}</title>
+    <!-- Metas -->
+    <!-- metas  -->
+    <meta property="og:title" content="Congreso Promocion Salud 2023">
+    <meta property="og:description" content="Convoca a profesionales de la salud, investigadores, docentes, egresados y estudiantes con interés en la promoción de la salud a participar en el II Congreso Internacional Virtual de Promoción de la Salud.">
+    <meta property="og:image" content="https://www.congresopromocionsalud.com/images/brand/ogimage.png">      
+    <meta property="og:url" content="https://www.congresopromocionsalud.com">
+    <meta property="og:type" content="website">
+    <meta name="description" content="La Universidad Autónoma de Yucatán - Convoca a profesionales de la salud, investigadores, docentes, egresados y estudiantes con interés en la promoción de la salud a participar en el II Congreso Internacional Virtual de Promoción de la Salud.">
+    <meta name="keywords" content="salud, promocion, congreso, enfermeria, universidad, diseño web, paginas web, congreso de salud, universidades, universidad de yucatan, internacional, inscripcion">
+    <!-- Fuentes de Google  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
