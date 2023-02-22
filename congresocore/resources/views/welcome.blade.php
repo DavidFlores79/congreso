@@ -13,6 +13,7 @@
     <meta property="og:image" content="https://www.congresopromocionsalud.com/images/brand/ogimage.png">      
     <meta property="og:url" content="https://www.congresopromocionsalud.com">
     <meta property="og:type" content="website">
+    <meta name="author" content="David Flores Castillo - Glendy Pérez Góngora">
     <meta name="description" content="La Universidad Autónoma de Yucatán - Convoca a profesionales de la salud, investigadores, docentes, egresados y estudiantes con interés en la promoción de la salud a participar en el II Congreso Internacional Virtual de Promoción de la Salud.">
     <meta name="keywords" content="salud, promocion, congreso, enfermeria, universidad, diseño web, paginas web, congreso de salud, universidades, universidad de yucatan, internacional, inscripcion">
     <!-- Fuentes de Google  -->
@@ -270,10 +271,13 @@
                         <li><a href="">Contáctanos</a></li>
                         <li><a href="mailto:congreso_promocionsalud@correo.uady.mx">congreso_promocionsalud@correo.uady.mx</a></li>
                     </ul>
+                    <h3>© {{ date('Y') }} Copyright</h3>
+                    <ul class="list-unstyled links">
+                        <li>Diseñado por</li>
+                        <li><a href="https://enlacetecnologias.mx/" target="_blank">Enlace Tecnologías - Versión 1.0.0</a></li>
+                    </ul>
                 </div>
             </div>
-
-        </div>
 
         </div>
     </footer>
