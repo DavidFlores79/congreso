@@ -238,7 +238,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
-                        <img src="{{ asset('images/welcome/inscripcion.png') }}" alt="">
+                        <img class="w100" src="{{ asset('images/welcome/inscripcion.png') }}" alt="">
                     </div>
 
                 </div>
