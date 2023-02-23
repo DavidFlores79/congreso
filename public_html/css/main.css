@@ -71,13 +71,6 @@ body {
   height: 450px;
 }
 
-#image01 {
-  background-image: url("../images/welcome/image01.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -534,7 +527,7 @@ body {
   }
 
   .nosotros-texto-fondo {
-    top: 4rem;
+    top: 6rem;
     width: 200px;
     height: 340px;
   }
@@ -703,14 +696,16 @@ body {
   }
 
   .nosotros_texto {
+    padding-top: 1rem;
     padding-left: 0.5rem;
     color: var(--primary);
   }
 
   .nosotros-texto-fondo {
     top: 7rem;
-    width: 90px;
-    height: 150px;
+    width: 100px;
+    height: 160px;
+    overflow: hidden;
   }
 
   .nosotros_texto p {
