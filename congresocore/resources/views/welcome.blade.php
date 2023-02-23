@@ -28,12 +28,11 @@
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <!-- Animate  -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"> -->
-
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script src="{{ asset('js/animatescroll.js') }}"></script>
-
+    <!-- Animate  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 
 <body>
@@ -129,7 +128,7 @@
                 <span class="nosotros-congreso">II Congreso Internacional Virtual de Promoción de la Salud</span>
                 <!-- <p>"Aprendizajes multidiciplinarios y retos actuales para la equidad en salud"</p> -->
                 <p></p>
-                <p>Bajo el lema "Aprendizajes multidisciplinarios y retos actuales para la equidad en salud" se tendrán actividades en donde el análisis crítico, la otredad y la divulgación de la investigación serán los temas transversales para proponer estrategias que ayuden a alcanzar la equidad en salud.</p>
+                <p class="d-none d-xs-block d-md-block d-lg-block d-xl-block">Bajo el lema "Aprendizajes multidisciplinarios y retos actuales para la equidad en salud" se tendrán actividades en donde el análisis crítico, la otredad y la divulgación de la investigación serán los temas transversales para proponer estrategias que ayuden a alcanzar la equidad en salud.</p>
             </div>
             <div class="nosotros-imagen">
                 <div class="about-img">
@@ -142,7 +141,7 @@
     <div id="welcome" class="container-fluid padding">
         <div class="row welcome text-center">
             <div class="col-12">
-                <h3 class="display-4">Acerca de Nosotros</h3>
+                <h3 class="display-4 animate__animated animate__fadeInUpBig">Acerca de Nosotros</h3>
                 <!-- <hr> -->
                 <div class="col-12">
                     <p>El II Congreso Internacional Virtual de Promoción de la Salud es un evento realizado por la Facultad de Enfermería de la Universidad Autónoma de Yucatán, que reúne a investigadores, tomadores de decisiones, personal de salud, personal del sector educativo, estudiantes y público en general de América Latina, el Caribe y España bajo la estrategia universal impulsada por la Organización Mundial de la Salud, de "Promoción de la Salud".</p>
