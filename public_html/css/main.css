@@ -47,9 +47,24 @@ body {
 
 /* Swiper  */
 
+.congreso-fechas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 400px;
+  height: 300px;
+  background-image: url("../images/brand/congreso-fechas.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
 .swiper {
   width: 100%;
-  height: 100vh;
+  height: 450px;
 }
 
 #image01 {
@@ -81,6 +96,10 @@ body {
 
 .section-padding {
   padding: 50px 0;
+}
+
+.nosotros_texto {
+  padding-top: 2rem;
 }
 
 .nosotros_texto h3 {
@@ -119,6 +138,48 @@ body {
 }
 /*about-us*/
 
+
+/* welcome */
+
+#welcome {
+  background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/welcome/image05.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+.padding {
+  padding-bottom: 2rem;
+}
+
+.welcome {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.welcome h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.welcome p {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.welcome hr {
+  border-top: 2px solid var(--white);
+  width: 95%;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
+}
+
+/* Welcome  */
+
+
 /* inscripcion  */
 
 .inscripcionModal img {
@@ -127,6 +188,10 @@ body {
 }
 
 /* inscripcion  */
+
+.universidades h3{
+  font-weight: 600;
+}
 
 /* carteles*/
 
@@ -402,6 +467,21 @@ body {
     padding-left: 1.5rem;
   }
 
+  /* Welcome  */
+
+  .welcome h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+  
+  .welcome p {
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+
+  /* Welcome  */
+
   /* convocatoria  */
   .convocatoria h4 {
     font-size: 1.4rem;
@@ -444,6 +524,19 @@ body {
     color: var(--primary);
   }
 
+  /* Welcome  */
+  .welcome h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+  
+  .welcome p {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  /* Welcome  */
+
   /* convocatoria  */
   .convocatoria h4 {
     font-size: 1.2rem;
@@ -460,6 +553,20 @@ body {
 }
 
 @media (max-width: 994px) {
+
+    /* Welcome  */
+    .welcome h3 {
+      font-size: 1.7rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+    
+    .welcome p {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+    /* Welcome  */
+  
   /* convocatoria  */
   .convocatoria h4 {
     font-size: 1.2rem;
@@ -482,6 +589,32 @@ body {
 }
 
 @media (min-width: 481px) and (max-width: 509px) {
+
+  /* Slider  */
+  .congreso-fechas {
+    width: 250px;
+    height: 150px;
+  }
+
+  /* Nosotros  */
+  .nosotros_texto h3 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  /* Welcome  */
+  .welcome h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  
+  .welcome p {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+  /* Welcome  */
+
   /* convocatoria  */
 
   .convocatoria-background {
@@ -502,6 +635,12 @@ body {
     height: 50px;
   }
   /* imagen logo */
+
+  /* Slider  */
+  .congreso-fechas {
+    width: 250px;
+    height: 150px;
+  }
 
   .slider-title {
     font-size: 3rem;
@@ -526,6 +665,12 @@ body {
     padding-left: 0.5rem;
     color: var(--primary);
   }
+
+    /* Nosotros  */
+    .nosotros_texto h3 {
+      font-size: 2rem;
+      font-weight: 700;
+    }
 
   /* convocatoria  */
 

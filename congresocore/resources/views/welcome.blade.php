@@ -93,15 +93,28 @@
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <!-- <img id="image01" src="" alt=""> -->
-                <img src="{{ asset('images/welcome/image04.jpg') }}" alt="">
+                <img src="{{ asset('images/welcome/slider/image01.jpg') }}" alt="Imagenes de Congreso de Salud">
+                <div class="congreso-fechas"></div>
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/welcome/image05.jpg') }}" alt="">
+                <img src="{{ asset('images/welcome/slider/image02.jpg') }}" alt="Imagenes de Congreso de Salud">
+                <div class="congreso-fechas"></div>
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/welcome/image06.jpg') }}" alt="">
+                <img src="{{ asset('images/welcome/slider/image03.jpg') }}" alt="Imagenes de Congreso de Salud">
+                <div class="congreso-fechas"></div>
             </div>
+            <div class="swiper-slide">
+                <img src="{{ asset('images/welcome/slider/image04.jpg') }}" alt="Imagenes de Congreso de Salud">
+                <div class="congreso-fechas"></div>
+            </div>
+            <div class="swiper-slide">
+                <img src="{{ asset('images/welcome/slider/image05.jpg') }}" alt="Imagenes de Congreso de Salud">
+                <div class="congreso-fechas"></div>
+            </div>
+            <!-- <div class="swiper-slide">
+                <img src="{{ asset('images/welcome/slider/image06.jpg') }}" alt="">
+            </div> -->
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
@@ -109,12 +122,14 @@
 
     <!-- Acerca de Nosotros -->
     <section id="about-us" class="section-padding">
-        <div class="d-flex align-items-center justify-content-between">
+        <div class="d-flex justify-content-between">
             <div class="nosotros_texto">
                 <h3>La Facultad de Enfermería de la Universidad Autónoma de Yucatán</h3>
                 <p>Convoca a profesionales de la salud, investigadores, docentes, egresados y estudiantes con interés en la promoción de la salud a participar en el:</p>
                 <span class="nosotros-congreso">II Congreso Internacional Virtual de Promoción de la Salud</span>
-                <p>"Aprendizajes multidiciplinarios y retos actuales para la equidad en salud"</p>
+                <!-- <p>"Aprendizajes multidiciplinarios y retos actuales para la equidad en salud"</p> -->
+                <p></p>
+                <p>Bajo el lema "Aprendizajes multidisciplinarios y retos actuales para la equidad en salud" se tendrán actividades en donde el análisis crítico, la otredad y la divulgación de la investigación serán los temas transversales para proponer estrategias que ayuden a alcanzar la equidad en salud.</p>
             </div>
             <div class="nosotros-imagen">
                 <div class="about-img">
@@ -123,6 +138,19 @@
             </div>
         </div>
     </section>
+
+    <div id="welcome" class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h3 class="display-4">Acerca de Nosotros</h3>
+                <!-- <hr> -->
+                <div class="col-12">
+                    <p>El II Congreso Internacional Virtual de Promoción de la Salud es un evento realizado por la Facultad de Enfermería de la Universidad Autónoma de Yucatán, que reúne a investigadores, tomadores de decisiones, personal de salud, personal del sector educativo, estudiantes y público en general de América Latina, el Caribe y España bajo la estrategia universal impulsada por la Organización Mundial de la Salud, de "Promoción de la Salud".</p>
+                    <p>En esta segunda edición, contaremos con diversas ponencias magistrales en donde se intercambian experiencias de investigación y estrategias de diagnóstico, intervención y evaluación de promoción de la salud.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Carteles  -->
     <!-- <section id="carteles">
@@ -184,12 +212,12 @@
                     <h3 class="text-center">Colaboradores</h3>
                     <div class="slider">
                         <div class="logos">
-                            <img src="{{ asset('images/welcome/schools/school01.png') }}" alt="">
-                            <img src="{{ asset('images/welcome/schools/school02.png') }}" alt="">
-                            <img src="{{ asset('images/welcome/schools/school03.png') }}" alt="">
-                            <img src="{{ asset('images/welcome/schools/school04.png') }}" alt="">
-                            <img src="{{ asset('images/welcome/schools/school01.png') }}" alt="">
-                            <img src="{{ asset('images/welcome/schools/school02.png') }}" alt="">
+                            <img src="{{ asset('images/welcome/schools/school01.png') }}" alt="Facultad de Enfermeria UADY">
+                            <img src="{{ asset('images/welcome/schools/school02.png') }}" alt="Facultad de Enfermeria UADY">
+                            <img src="{{ asset('images/welcome/schools/school03.png') }}" alt="Facultad de Enfermeria UADY">
+                            <img src="{{ asset('images/welcome/schools/school04.png') }}" alt="Facultad de Enfermeria UADY">
+                            <img src="{{ asset('images/welcome/schools/school01.png') }}" alt="Facultad de Enfermeria UADY">
+                            <img src="{{ asset('images/welcome/schools/school02.png') }}" alt="Facultad de Enfermeria UADY">
                         </div>
                     </div>
                 </div>
@@ -238,7 +266,9 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
-                        <img class="w100" src="{{ asset('images/welcome/inscripcion.png') }}" alt="">
+                        <a href="https://forms.office.com/r/t7tTF5nttv" target="_blank">
+                            <img class="w100" src="{{ asset('images/welcome/inscripcion.png') }}" alt="Inscripcion Congreso">
+                        </a>
                     </div>
 
                 </div>
