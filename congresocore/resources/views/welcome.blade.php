@@ -129,6 +129,7 @@
                 <!-- <p>"Aprendizajes multidiciplinarios y retos actuales para la equidad en salud"</p> -->
                 <p></p>
                 <p class="d-none d-xs-block d-md-block d-lg-block d-xl-block">Bajo el lema "Aprendizajes multidisciplinarios y retos actuales para la equidad en salud" se tendrán actividades en donde el análisis crítico, la otredad y la divulgación de la investigación serán los temas transversales para proponer estrategias que ayuden a alcanzar la equidad en salud.</p>
+                <div class="nosotros-texto-fondo"></div>
             </div>
             <div class="nosotros-imagen">
                 <div class="about-img">
@@ -298,7 +299,7 @@
                     <h3>Acerca de Nosotros</h3>
                     <ul class="list-unstyled links">
                         <li><a href="">Contáctanos</a></li>
-                        <li><a href="mailto:congreso_promocionsalud@correo.uady.mx">congreso_promocionsalud@correo.uady.mx</a></li>
+                        <li><a class="congreso-mail" href="mailto:congreso_promocionsalud@correo.uady.mx">congreso_promocionsalud@correo.uady.mx</a></li>
                     </ul>
                     <h3>© {{ date('Y') }} Copyright</h3>
                     <ul class="list-unstyled links">
