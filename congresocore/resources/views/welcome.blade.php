@@ -90,7 +90,7 @@
     </nav>
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-swiper-autoplay="5000">
                 <img src="{{ asset('images/welcome/slider/image00.jpg') }}" alt="Imagenes de Congreso de Salud">
                 <div class="congreso-fechas"></div>
             </div>
