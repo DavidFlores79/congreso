@@ -58,8 +58,8 @@ body {
   right: 0;
   bottom: 0;
   margin: auto;
-  width: 500px;
-  height: 375px;
+  width: 700px;
+  height: 525px;
   background-image: url("../images/brand/congreso-fechas.png");
   background-repeat: no-repeat;
   background-position: center center;
@@ -68,7 +68,7 @@ body {
 
 .swiper {
   width: 100%;
-  height: 450px;
+  height: 100vh;
 }
 
 .swiper-slide {
@@ -195,6 +195,11 @@ body {
 
 
 /* inscripcion  */
+
+#pdf-inscripcion, #pdf-convocatoria {
+  width: 100%;
+  height: 70vh;
+}
 
 .inscripcionModal img {
   width: 100%;

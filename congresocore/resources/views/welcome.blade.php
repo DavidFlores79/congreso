@@ -10,7 +10,7 @@
     <!-- metas  -->
     <meta property="og:title" content="Congreso Promocion Salud 2023">
     <meta property="og:description" content="Convoca a profesionales de la salud, investigadores, docentes, egresados y estudiantes con interés en la promoción de la salud a participar en el II Congreso Internacional Virtual de Promoción de la Salud.">
-    <meta property="og:image" content="https://www.congresopromocionsalud.com/images/brand/ogimage.png">      
+    <meta property="og:image" content="https://www.congresopromocionsalud.com/images/brand/ogimage.png">
     <meta property="og:url" content="https://www.congresopromocionsalud.com">
     <meta property="og:type" content="website">
     <meta name="author" content="David Flores Castillo - Glendy Pérez Góngora">
@@ -31,7 +31,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script src="{{ asset('js/animatescroll.js') }}"></script>
     <!-- Animate  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -79,7 +79,7 @@
                                 <a class="nav-link active" id="menuInscripcionMovil">Inscripción</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" id="menuColaboradoresMovil" >Colaboradores</a>
+                                <a class="nav-link active" id="menuColaboradoresMovil">Colaboradores</a>
                             </li>
                         </ul>
                     </div>
@@ -233,7 +233,6 @@
     </section>
 
     <!-- Modal Convocatoria -->
-
     <div class="modal fade" id="convocatoriaModal" tabindex="-1" aria-labelledby="convocatoriaModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
             <div class="modal-content">
@@ -241,23 +240,10 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <!-- <h4>PRESENTACIÓN DE PROTOCOLOS Y TRABAJOS DE INVESTIGACIÓN FINALIZADOS EN MODALIDAD CARTEL Y PRESENTACIONES ORALES BASES</h4>
-                    <p>1. Se recibirán resúmenes de protocolos de investigación e investigaciones finalizadas que aborden temas relacionados con las Líneas de Acción de la Promoción de la Salud:</p>
-                    <ol type="a">
-                        <li>Fortalecer los entornos saludables claves</li>
-                        <li>Facilitar la participación y el empoderamiento de la comunidad y el compromiso de la sociedad civil.</li>
-                        <li>Fortalecer la buena gobernanza y el trabajo intersectorial para mejorar la salud y el bienestar y abordar los determinantes sociales de la salud</li>
-                        <li>Fortalecer los sistemas y servicios de salud a través de la promoción de la salud</li>
-                    </ol>
-                    <p>2. Los resúmenes se recibirán a partir del 20 de febrero hasta el 21 de abril de 2023 hasta las 23:59 hrs.</p>
-                    <p>3. El resumen tendrá un máximo de 300 palabras (sin contar las referencias). El título debe estar al inicio, centrado y con negrita. Seguido con el nombre y apellido de los autores (máximo 5). Cada autor deberá ser identificado con número en superíndice, grado académico e institución de afiliación. Sólo podrá ser autor principal de un resumen enviado.</p>
-                    <p>4. Los apartados de los trabajos deberán contar en el caso de protocolos de investigación: Introducción, objetivo, materiales y métodos e impacto esperado. Para investigaciones finalizadas: Introducción, objetivo, materiales y métodos, resultados y conclusiones. En ambos tipos de trabajo incluir un máximo de tres referencias actuales (últimos 5 años) en formato APA 7ma edición. Formato para resumen, disponible en: <a href="https://bit.ly/3XEK7kj">https://bit.ly/3XEK7kj</a></p>
-                    <p>5. Los resúmenes deben ser enviados al correo congreso_promocionsalud@correo.uady.mx (Guardar archivo con apellidos del primer autor y línea de acción del tema, ejemplo: MoralesLopez_fortalecerlosentornossaludablesclaves.docx).</p>
-                    <p>6. El Comité Científico evaluará la pertinencia de los trabajos enviados. Del 25 al 31 de mayo de 2023 se emitirán los dictámenes de aceptación o no aceptación por medio del correo electrónico. Las instrucciones para el cartel o la presentación oral se darán a conocer en los dictámenes. Los responsables de los resúmenes deben contar con inscripción y registro al congreso a más tardar el 23 de junio de 2023.</p>
-                    <p>7. Se otorgarán reconocimientos a los trabajos que por su trascendencia, relevancia y rigor metodológico que destaquen en modalidad cartel y presentación oral.</p>
-                    <p>8. Los casos no previstos en la presente convocatoria serán resueltos por el Comité Organizador al correo: <a class="convocatoria-correo" href="mailto:congreso_promocionsalud@correo.uady.mx">congreso_promocionsalud@correo.uady.mx</a></p>
-                    <img class="convocatoria-background" src="{{ asset('images/brand/jaguar.svg') }}" alt="Mascota UADY"> -->
-                    <div id="pdf-convocatoria"></div>
+                    <div>
+                        <embed id="pdf-convocatoria" src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://congresopromocionsalud.com/pdf/Convocatoria_Convocatoria%20congreso%20240223.pdf">
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -265,23 +251,21 @@
     <!-- Modal Convocatoria -->
 
     <!-- Modal Inscripcion -->
-     <!-- Modal -->
-     <div class="inscripcionModal modal fade" id="inscripcionModal" tabindex="-1" aria-labelledby="inscripcionModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
-                <div class="modal-content text-center">
-                    <div class="modal-body">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        <!-- <a href="https://forms.office.com/r/t7tTF5nttv" target="_blank">
-                            <img class="w100" src="{{ asset('images/welcome/inscripcion.png') }}" alt="Inscripcion Congreso">
-                        </a> -->
-                        <div id="pdf-inscripcion"></div>
+    <div class="inscripcionModal modal fade" id="inscripcionModal" tabindex="-1" aria-labelledby="inscripcionModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+            <div class="modal-content text-center">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div>
+                        <embed id="pdf-inscripcion" src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://congresopromocionsalud.com/pdf/Inscripci%C3%B3n_Convocatoria%20congreso%20240223.pdf">
                     </div>
-
                 </div>
+
             </div>
         </div>
+    </div>
     <!-- Modal Inscripcion -->
 
     <!-- footer  -->
@@ -298,18 +282,13 @@
                 <div class="col-md-4 text-center">
                     <h3>Contáctanos</h3>
                     <ul class="list-unstyled links">
-                        <li><a class="congreso-mail" href="mailto:congreso_promocionsalud@correo.uady.mx">congreso_promocionsalud@correo.uady.mx</a></li>
-                        <!-- <li><a href="">Facultad de Enfermería</a></li>
+                        <li><a href="">Facultad de Enfermería</a></li>
                         <li><a href="">Calle 90 SN Centro</a></li>
-                        <li><a href="tel:9999242216">Tel. (9999) 24-22-16</a></li> -->
+                        <li><a class="congreso-mail" href="mailto:congreso_promocionsalud@correo.uady.mx">congreso_promocionsalud@correo.uady.mx</a></li>
+                        <!-- <li><a href="tel:9999242216">Tel. (9999) 24-22-16</a></li> -->
                     </ul>
                 </div>
                 <div class="col-md-4 text-center">
-                    <!-- <h3>Acerca de Nosotros</h3>
-                    <ul class="list-unstyled links">
-                        <li><a href="">Contáctanos</a></li>
-                        <li><a class="congreso-mail" href="mailto:congreso_promocionsalud@correo.uady.mx">congreso_promocionsalud@correo.uady.mx</a></li>
-                    </ul> -->
                     <h3>Diseñado por</h3>
                     <ul class="list-unstyled links">
                         <li><a href="https://enlacetecnologias.mx/" target="_blank">Enlace Tecnologías - Versión 1.1.0</a></li>
@@ -323,9 +302,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
     <script src="{{ asset('js/main.js') }}"></script>
-    <script src="{{ asset('js/pdfobject/pdfobject.min.js') }}"></script>
-    <script>PDFObject.embed("{{ asset('pdf/Convocatoria_Convocatoria congreso 240223.pdf') }}", "#pdf-convocatoria");</script>
-    <script>PDFObject.embed("{{ asset('pdf/Inscripción_Convocatoria congreso 240223.pdf') }}", "#pdf-inscripcion");</script>
 </body>
 
 </html>
