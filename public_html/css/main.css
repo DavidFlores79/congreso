@@ -58,8 +58,8 @@ body {
   right: 0;
   bottom: 0;
   margin: auto;
-  width: 400px;
-  height: 300px;
+  width: 500px;
+  height: 375px;
   background-image: url("../images/brand/congreso-fechas.png");
   background-repeat: no-repeat;
   background-position: center center;
@@ -301,6 +301,9 @@ body {
 /* carteles*/
 
 /* Convocatoria  */
+
+.pdfobject-container { height: 45rem; width: 100%; border: 1rem solid rgba(0,0,0,.1); }
+
 .modal-dialog .modal-content {
   /* background-color: var(--primary); */
   background: rgb(2, 0, 36);
@@ -565,6 +568,12 @@ body {
 /* / Móviles en horizontal o tablets en vertical
    ------------------------------------------------------------------------- / */
 @media (max-width: 767px) {
+
+  .congreso-fechas {
+    width: 400px;
+    height: 300px;
+  }
+  
   .slider-title {
     font-size: 5rem;
   }

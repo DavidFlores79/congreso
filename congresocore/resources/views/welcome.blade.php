@@ -31,8 +31,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script src="{{ asset('js/animatescroll.js') }}"></script>
     <!-- Animate  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
 <body>
@@ -92,24 +91,28 @@
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img src="{{ asset('images/welcome/slider/image01.jpg') }}" alt="Imagenes de Congreso de Salud">
+                <img src="{{ asset('images/welcome/slider/image00.jpg') }}" alt="Imagenes de Congreso de Salud">
                 <div class="congreso-fechas"></div>
+            </div>
+            <div class="swiper-slide">
+                <img src="{{ asset('images/welcome/slider/image01.jpg') }}" alt="Imagenes de Congreso de Salud">
+                <!-- <div class="congreso-fechas"></div> -->
             </div>
             <div class="swiper-slide">
                 <img src="{{ asset('images/welcome/slider/image02.jpg') }}" alt="Imagenes de Congreso de Salud">
-                <div class="congreso-fechas"></div>
+                <!-- <div class="congreso-fechas"></div> -->
             </div>
             <div class="swiper-slide">
                 <img src="{{ asset('images/welcome/slider/image03.jpg') }}" alt="Imagenes de Congreso de Salud">
-                <div class="congreso-fechas"></div>
+                <!-- <div class="congreso-fechas"></div> -->
             </div>
             <div class="swiper-slide">
                 <img src="{{ asset('images/welcome/slider/image04.jpg') }}" alt="Imagenes de Congreso de Salud">
-                <div class="congreso-fechas"></div>
+                <!-- <div class="congreso-fechas"></div> -->
             </div>
             <div class="swiper-slide">
                 <img src="{{ asset('images/welcome/slider/image05.jpg') }}" alt="Imagenes de Congreso de Salud">
-                <div class="congreso-fechas"></div>
+                <!-- <div class="congreso-fechas"></div> -->
             </div>
             <!-- <div class="swiper-slide">
                 <img src="{{ asset('images/welcome/slider/image06.jpg') }}" alt="">
@@ -128,7 +131,8 @@
                 <span class="nosotros-congreso">II Congreso Internacional Virtual de Promoción de la Salud</span>
                 <!-- <p>"Aprendizajes multidiciplinarios y retos actuales para la equidad en salud"</p> -->
                 <p></p>
-                <p class="d-none d-xs-block d-md-block d-lg-block d-xl-block">Bajo el lema "Aprendizajes multidisciplinarios y retos actuales para la equidad en salud" se tendrán actividades en donde el análisis crítico, la otredad y la divulgación de la investigación serán los temas transversales para proponer estrategias que ayuden a alcanzar la equidad en salud.</p>
+                <p class="d-none d-xs-block d-md-block d-lg-block d-xl-block">"Aprendizajes multidisciplinarios y retos actuales para la equidad en salud".</p>
+                <p class="d-none d-xs-block d-md-block d-lg-block d-xl-block">En este evento se tendrán actividades en donde el análisis crítico, la otredad y la divulgación de la investigación serán temas transversales para proponer estrategias que contribuyan a alcanzar la equidad en salud</p>
                 <div class="nosotros-texto-fondo"></div>
             </div>
             <div class="nosotros-imagen">
@@ -151,6 +155,7 @@
             </div>
         </div>
     </div>
+
 
     <!-- Carteles  -->
     <!-- <section id="carteles">
@@ -216,6 +221,7 @@
                             <img src="{{ asset('images/welcome/schools/school02.png') }}" alt="Facultad de Enfermeria UADY">
                             <img src="{{ asset('images/welcome/schools/school03.png') }}" alt="Facultad de Enfermeria UADY">
                             <img src="{{ asset('images/welcome/schools/school04.png') }}" alt="Facultad de Enfermeria UADY">
+                            <img src="{{ asset('images/welcome/schools/school05.png') }}" alt="Facultad de Enfermeria UADY">
                             <img src="{{ asset('images/welcome/schools/school01.png') }}" alt="Facultad de Enfermeria UADY">
                             <img src="{{ asset('images/welcome/schools/school02.png') }}" alt="Facultad de Enfermeria UADY">
                         </div>
@@ -231,11 +237,11 @@
     <div class="modal fade" id="convocatoriaModal" tabindex="-1" aria-labelledby="convocatoriaModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
             <div class="modal-content">
-                <div class="modal-body convocatoria">
+                <div class="modal-body">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <h4>PRESENTACIÓN DE PROTOCOLOS Y TRABAJOS DE INVESTIGACIÓN FINALIZADOS EN MODALIDAD CARTEL Y PRESENTACIONES ORALES BASES</h4>
+                    <!-- <h4>PRESENTACIÓN DE PROTOCOLOS Y TRABAJOS DE INVESTIGACIÓN FINALIZADOS EN MODALIDAD CARTEL Y PRESENTACIONES ORALES BASES</h4>
                     <p>1. Se recibirán resúmenes de protocolos de investigación e investigaciones finalizadas que aborden temas relacionados con las Líneas de Acción de la Promoción de la Salud:</p>
                     <ol type="a">
                         <li>Fortalecer los entornos saludables claves</li>
@@ -250,7 +256,8 @@
                     <p>6. El Comité Científico evaluará la pertinencia de los trabajos enviados. Del 25 al 31 de mayo de 2023 se emitirán los dictámenes de aceptación o no aceptación por medio del correo electrónico. Las instrucciones para el cartel o la presentación oral se darán a conocer en los dictámenes. Los responsables de los resúmenes deben contar con inscripción y registro al congreso a más tardar el 23 de junio de 2023.</p>
                     <p>7. Se otorgarán reconocimientos a los trabajos que por su trascendencia, relevancia y rigor metodológico que destaquen en modalidad cartel y presentación oral.</p>
                     <p>8. Los casos no previstos en la presente convocatoria serán resueltos por el Comité Organizador al correo: <a class="convocatoria-correo" href="mailto:congreso_promocionsalud@correo.uady.mx">congreso_promocionsalud@correo.uady.mx</a></p>
-                    <img class="convocatoria-background" src="{{ asset('images/brand/jaguar.svg') }}" alt="Mascota UADY">
+                    <img class="convocatoria-background" src="{{ asset('images/brand/jaguar.svg') }}" alt="Mascota UADY"> -->
+                    <div id="pdf-convocatoria"></div>
                 </div>
             </div>
         </div>
@@ -266,9 +273,10 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
-                        <a href="https://forms.office.com/r/t7tTF5nttv" target="_blank">
+                        <!-- <a href="https://forms.office.com/r/t7tTF5nttv" target="_blank">
                             <img class="w100" src="{{ asset('images/welcome/inscripcion.png') }}" alt="Inscripcion Congreso">
-                        </a>
+                        </a> -->
+                        <div id="pdf-inscripcion"></div>
                     </div>
 
                 </div>
@@ -290,31 +298,34 @@
                 <div class="col-md-4 text-center">
                     <h3>Contáctanos</h3>
                     <ul class="list-unstyled links">
-                        <li><a href="">Facultad de Enfermería</a></li>
+                        <li><a class="congreso-mail" href="mailto:congreso_promocionsalud@correo.uady.mx">congreso_promocionsalud@correo.uady.mx</a></li>
+                        <!-- <li><a href="">Facultad de Enfermería</a></li>
                         <li><a href="">Calle 90 SN Centro</a></li>
-                        <li><a href="tel:9999242216">Tel. (9999) 24-22-16</a></li>
+                        <li><a href="tel:9999242216">Tel. (9999) 24-22-16</a></li> -->
                     </ul>
                 </div>
                 <div class="col-md-4 text-center">
-                    <h3>Acerca de Nosotros</h3>
+                    <!-- <h3>Acerca de Nosotros</h3>
                     <ul class="list-unstyled links">
                         <li><a href="">Contáctanos</a></li>
                         <li><a class="congreso-mail" href="mailto:congreso_promocionsalud@correo.uady.mx">congreso_promocionsalud@correo.uady.mx</a></li>
-                    </ul>
-                    <h3>© {{ date('Y') }} Copyright</h3>
+                    </ul> -->
+                    <h3>Diseñado por</h3>
                     <ul class="list-unstyled links">
-                        <li>Diseñado por</li>
-                        <li><a href="https://enlacetecnologias.mx/" target="_blank">Enlace Tecnologías - Versión 1.0.0</a></li>
+                        <li><a href="https://enlacetecnologias.mx/" target="_blank">Enlace Tecnologías - Versión 1.1.0</a></li>
+                        <li>© {{ date('Y') }} Copyright</li>
                     </ul>
                 </div>
             </div>
 
         </div>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
     <script src="{{ asset('js/main.js') }}"></script>
+    <script src="{{ asset('js/pdfobject/pdfobject.min.js') }}"></script>
+    <script>PDFObject.embed("{{ asset('pdf/Convocatoria_Convocatoria congreso 240223.pdf') }}", "#pdf-convocatoria");</script>
+    <script>PDFObject.embed("{{ asset('pdf/Inscripción_Convocatoria congreso 240223.pdf') }}", "#pdf-inscripcion");</script>
 </body>
 
 </html>
