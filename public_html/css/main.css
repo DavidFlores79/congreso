@@ -201,7 +201,7 @@ body {
   height: 70vh;
 }
 
-.inscripcionModal img {
+.inscripcionModal, .convocatoriaModal {
   width: 100%;
   overflow: scroll;
 }

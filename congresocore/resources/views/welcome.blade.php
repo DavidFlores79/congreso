@@ -241,7 +241,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                     <div>
-                        <embed id="pdf-convocatoria" src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://congresopromocionsalud.com/pdf/Convocatoria_Convocatoria%20congreso%20240223.pdf">
+                        <embed id="pdf-convocatoria" src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://congresopromocionsalud.com/pdf/Convocatoria_Convocatoria%20congreso%20240223.pdf" frameborder="0" allowfullscreen>
 
                     </div>
                 </div>
@@ -259,7 +259,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                     <div>
-                        <embed id="pdf-inscripcion" src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://congresopromocionsalud.com/pdf/Inscripci%C3%B3n_Convocatoria%20congreso%20240223.pdf">
+                        <embed id="pdf-inscripcion" src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://congresopromocionsalud.com/pdf/Inscripci%C3%B3n_Convocatoria%20congreso%20240223.pdf" frameborder="0" allowfullscreen>
                     </div>
                 </div>
 
