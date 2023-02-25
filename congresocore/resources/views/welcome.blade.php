@@ -224,6 +224,14 @@
                             <img src="{{ asset('images/welcome/schools/school05.png') }}" alt="Facultad de Enfermeria UADY">
                             <img src="{{ asset('images/welcome/schools/school01.png') }}" alt="Facultad de Enfermeria UADY">
                             <img src="{{ asset('images/welcome/schools/school02.png') }}" alt="Facultad de Enfermeria UADY">
+                            <img src="{{ asset('images/welcome/schools/school03.png') }}" alt="Facultad de Enfermeria UADY">
+                            <img src="{{ asset('images/welcome/schools/school04.png') }}" alt="Facultad de Enfermeria UADY">
+                            <img src="{{ asset('images/welcome/schools/school05.png') }}" alt="Facultad de Enfermeria UADY">
+                            <img src="{{ asset('images/welcome/schools/school01.png') }}" alt="Facultad de Enfermeria UADY">
+                            <img src="{{ asset('images/welcome/schools/school02.png') }}" alt="Facultad de Enfermeria UADY">
+                            <img src="{{ asset('images/welcome/schools/school03.png') }}" alt="Facultad de Enfermeria UADY">
+                            <img src="{{ asset('images/welcome/schools/school04.png') }}" alt="Facultad de Enfermeria UADY">
+                            <img src="{{ asset('images/welcome/schools/school05.png') }}" alt="Facultad de Enfermeria UADY">
                         </div>
                     </div>
                 </div>
@@ -291,7 +299,7 @@
                 <div class="col-md-4 text-center">
                     <h3>Diseñado por</h3>
                     <ul class="list-unstyled links">
-                        <li><a href="https://enlacetecnologias.mx/" target="_blank">Enlace Tecnologías - Versión 1.1.0</a></li>
+                        <li><a href="https://enlacetecnologias.mx/" target="_blank">Enlace Tecnologías - Versión 1.1.2</a></li>
                         <li>© {{ date('Y') }} Copyright</li>
                     </ul>
                 </div>
