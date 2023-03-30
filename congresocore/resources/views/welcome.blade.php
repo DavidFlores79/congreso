@@ -114,9 +114,9 @@
                 <img src="{{ asset('images/welcome/slider/image05.jpg') }}" alt="Imagenes de Congreso de Salud">
                 <!-- <div class="congreso-fechas"></div> -->
             </div>
-            <!-- <div class="swiper-slide">
-                <img src="{{ asset('images/welcome/slider/image06.jpg') }}" alt="">
-            </div> -->
+            <div class="swiper-slide">
+                <img src="{{ asset('images/welcome/slider/image06.jpg') }}" alt="Imagenes de Congreso de Salud">
+            </div>
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
@@ -249,7 +249,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                     <div>
-                        <embed id="pdf-convocatoria" src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://congresopromocionsalud.com/pdf/Convocatoria_Convocatoria%20congreso%20240223.pdf" frameborder="0" allowfullscreen>
+                        <embed id="pdf-convocatoria" src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://congresopromocionsalud.com/pdf/Convocatoria_Congreso_280223.pdf" frameborder="0" allowfullscreen>
 
                     </div>
                 </div>
@@ -290,10 +290,18 @@
                 <div class="col-md-4 text-center">
                     <h3>Contáctanos</h3>
                     <ul class="list-unstyled links">
-                        <li><a href="">Facultad de Enfermería</a></li>
-                        <li><a href="">Calle 90 SN Centro</a></li>
                         <li><a class="congreso-mail" href="mailto:congreso_promocionsalud@correo.uady.mx">congreso_promocionsalud@correo.uady.mx</a></li>
-                        <!-- <li><a href="tel:9999242216">Tel. (9999) 24-22-16</a></li> -->
+                        <li><a href="">Facultad de Enfermería</a></li>
+                        <li><a href="">Calle 90 S/N x 59 y 59A</a></li>
+                        <li><a href="">Contiguo al Hosp. O'Horán</a></li>
+                        <li>
+                            <a href="https://wa.link/j2znzx">
+                                Whatsapp 99 92 51 41 19
+                                <span>
+                                    <img height="30" src="{{ asset('images/whatsapp.png') }}" alt="">
+                                </span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-md-4 text-center">
